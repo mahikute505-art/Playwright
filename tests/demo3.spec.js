@@ -8,7 +8,7 @@ test ('Built-in-Locators',async({page}) =>
 
        await page.locator('#signin2').click();
 
-        await page.getByText(' PRODUCT STORE').click();
+      //  await page.getByText(' PRODUCT STORE').click();
      await page.getByLabel('Username:').fill('mohit');
 await page.getByRole('link' ,{name:'About us'}).click();
 
