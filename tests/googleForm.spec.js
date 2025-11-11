@@ -45,3 +45,12 @@ await page.getByPlaceholder('Last Name').fill('kute');
  //await page.locator('#type=email').fill('mohitkute01@gmail.com');
 
 });
+
+test ('file submit', async ({page}) =>
+{
+
+   await page.goto('https://practice.expandtesting.com/upload');
+await page.locator("#fileInput").setInputFiles("./tests/files/1.png");
+await page.locator('#fileSubmit').click();
+
+});
