@@ -46,7 +46,7 @@ await page.getByPlaceholder('Last Name').fill('kute');
 
 });
 
-test ('file submit', async ({page}) =>
+test ('file submit', async ({page}) =>  
 {
 
    await page.goto('https://practice.expandtesting.com/upload');
