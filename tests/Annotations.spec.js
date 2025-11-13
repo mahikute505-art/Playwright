@@ -3,8 +3,8 @@ import { only } from 'node:test';
 
 
 //only Annotation
-test.only ('test 1', async ({ page }) => {
-
+//test.only ('test 1', async ({ page }) => {
+test ('test 1', async ({ page }) => {
 console.log('test 1 exicuted')
 
 
