@@ -37,9 +37,9 @@ if(browserName === 'chromium'){
 })
 
 
-test ('test 5', async ({ page, browserName }) => {
+test('test 5', async ({ page, browserName }) => {
 
-test.slow();
+//test.slow();
 console.log('test 5 exicuted')
 if(browserName === 'firefox'){
     test.fail();
