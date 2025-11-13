@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('correct login form', async ({ page }) => {
   // Step 1: Go to the login page
-  await page.goto('https://www.saucedemo.com/');
+  await page.goto('https://www.saucedemo.com/inventory.html"');
 
   // Step 2: Fill in username and password
   await page.fill('#user-name', 'standard_usr');
@@ -23,7 +23,7 @@ test('correct login form', async ({ page }) => {
 
  test('incorrect login form', async ({ page }) => {
   // Step 1: Go to the login page
-  await page.goto('https://www.saucedemo.com/') ;
+  await page.goto('https://www.saucedemo.com/inventory.html"') ;
 
 await page.fill('#user-name','wrong_username');
 await page.fill('#password', 'wrong_password');
