@@ -5,8 +5,8 @@ test('correct login form', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
 
   // Step 2: Fill in username and password
-  await page.fill('#user-name', 'standard_user');
-  await page.fill('#password', 'secret_sauce');
+  await page.fill('#user-name', 'standard_usr');
+  await page.fill('#password', 'secret_sau');
 
   // Step 3: Click the login button
   await page.click('#login-button');
@@ -35,8 +35,6 @@ await page.fill('#password', 'wrong_password');
     await expect (errorMessage).toBeVisible();
   expect(errorMessage).toContainText('Username and password do not match');
   
-  
- 
- });
+   });
 
- //[data-test="title"]
+ 
