@@ -59,10 +59,7 @@ export default defineConfig({
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
      },*/
-     //{
-     // name: 'Mobile Safari',
-       //use: { ...devices['iPhone 12'] },
-     //},
+     
 
     /* Test against branded browsers. */
     // {
@@ -73,6 +70,14 @@ export default defineConfig({
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
+
+{
+name: 'iphone',
+      use: { ...devices['iPhone 12'] },
+
+       ...devices['iPhone 12'],
+},
+
   ],
 
   /* Run your local dev server before starting the tests */
@@ -81,6 +86,7 @@ export default defineConfig({
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+
 
 
 

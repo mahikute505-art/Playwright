@@ -16,25 +16,26 @@ await page.waitForTimeout(5000);
 await page.locator('#btn-clear-inputs').click();
 
 });
- test ('login page', async({page}) =>
-{ 
-await page.goto('https://practice.expandtesting.com/login');
+// test('login page', async ({ browser }) => {
+//   const context = await browser.newContext();
+//   const page = await context.newPage();
 
-await page.locator('#username').fill('practice');
-await page.locator('#password').fill('SuperSecretPassword!');
+//   await page.goto('https://practice.expandtesting.com/login', { waitUntil: 'load' });
 
-await page.waitForTimeout(5000);
-await page.locator('#submit-login').click();
+//   await page.locator('#username').fill('practice');
+//   await page.locator('#password').fill('SuperSecretPassword!');
 
-await page.waitForTimeout(5000);
+//   await page.locator('#submit-login').click();
+//   await page.waitForLoadState('networkidle');
 
-await page.locator('.icon-2x.icon-signout').click();
+//   await page.locator('.icon-2x.icon-signout').click();
 
-});
+//   await context.close();
+// });
 
 test ('register form', async ({page}) =>
 {
-await  page.goto('https://demo.automationtesting.in/Index.html');// webside link
+await  page.goto('https://demo.automationtesting.in/');// webside link
 
 await page.locator('#email').fill('mahikute505@gmail.com');
 await page.locator('#enterimg').click();
@@ -68,7 +69,7 @@ await page.locator('li', { hasText: 'Danish'}).click();
 //await page.waitForTimeout(5000);
 
 await page.locator('#Skills').selectOption('HTML'); //select skill
-await page.waitForTimeout(3000);
+//await page.waitForTimeout(3000);
 //await page.locator('#countries').click(); // click on select countries 
 
 //await page.locator('.select2-selection').click(); //select countries
@@ -86,7 +87,7 @@ await page.locator('#secondpassword').fill('mahik505');//enter repassword
 await page.locator('#submitbtn').click();//click on submit button
 
 
-await page.waitForTimeout(5000); // wait for 5 sec.
+//await page.waitForTimeout(5000); // wait for 5 sec.
 await page.locator('#Button1').click(); //click on clear button
 
 
