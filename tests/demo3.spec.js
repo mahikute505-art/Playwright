@@ -1,5 +1,3 @@
-
-
 import { test, expect } from '@playwright/test';
 test ('Built-in-Locators',async({page}) =>
     {

@@ -44,5 +44,40 @@ console.log('test 5 exicuted')
 if(browserName === 'firefox'){
     test.fail();
 }
+})
+//Group Annotation "Describe"
+test.describe('group 1',()=>{
+test('test 6', async ({page})=>{
 
+console.log('test 6');
+
+})
+
+test('test 7', async ({page})=>{
+
+    console.log('test 7');
+})
+})
+
+// tag 
+test('test 8@aa', async ({page})=>{
+
+    console.log('test 8');
+})
+test('test 8@bb', async ({page})=>{
+
+    console.log('test 9');
+})
+test('test 8@aa@bb', async ({page})=>{
+
+    console.log('test 10');
+})
+
+test('test 8@cc', async ({page})=>{
+
+    console.log('test 11');
+})
+test('test 8@aa@cc', async ({page})=>{
+
+    console.log('test 12');
 })
