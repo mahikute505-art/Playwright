@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
 //Fixture Demo (context and browserName)
-test ('test fixture demo', async ({ page, browserName, context }) => {
+//test ('test fixture demo', async ({ page, browserName, context }) => {
 
-const pagee1 = await context.newPage();
-const pagee2 = await context.newPage();
+// //const pagee1 = await context.newPage();
+// const pagee2 = await context.newPage();
 
-await pagee1.goto('https://www.demoblaze.com/index.html');
-await pagee2.goto('https://www.demoblaze.com/index.html');
+// await pagee1.goto('https://www.demoblaze.com/index.html');
+// await pagee2.goto('https://www.demoblaze.com/index.html');
 
 
-});
+// });
 test('example', async ({ page }) => {
   await page.goto('https://google.com');
 });

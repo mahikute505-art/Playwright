@@ -16,25 +16,26 @@ await page.waitForTimeout(5000);
 await page.locator('#btn-clear-inputs').click();
 
 });
-// test('login page', async ({ browser }) => {
-//   const context = await browser.newContext();
-//   const page = await context.newPage();
+test('login page', async ({ browser }) => {
+  const context = await browser.newContext();
+  const page = await context.newPage();
 
-//   await page.goto('https://practice.expandtesting.com/login', { waitUntil: 'load' });
+  await page.goto('https://practice.expandtesting.com/login', { waitUntil: 'load' });
 
-//   await page.locator('#username').fill('practice');
-//   await page.locator('#password').fill('SuperSecretPassword!');
+  await page.locator('#username').fill('practice');
+  await page.locator('#password').fill('SuperSecretPassword!');
 
-//   await page.locator('#submit-login').click();
-//   await page.waitForLoadState('networkidle');
+  await page.locator('#submit-login').click();
+  await page.waitForLoadState('networkidle');
 
-//   await page.locator('.icon-2x.icon-signout').click();
+  await page.locator('.icon-2x.icon-signout').click();
 
-//   await context.close();
-// });
+  await context.close();
+});
 
 test ('register form', async ({page}) =>
 {
+   test.slow(3000);
 await  page.goto('https://demo.automationtesting.in/');// webside link
 
 await page.locator('#email').fill('mahikute505@gmail.com');

@@ -39,15 +39,15 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+    // {
+    //   name: 'chromium',
+    //   use: { ...devices['Desktop Chrome'] },
+    // },
 
-   // {
-     // name: 'firefox',
-      //use: { ...devices['Desktop Firefox'] },
-    //},
+   {
+     name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
 
     //{
       //name: 'webkit',
@@ -71,12 +71,12 @@ export default defineConfig({
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
 
-{
-name: 'iphone',
-      use: { ...devices['iPhone 12'] },
+// {
+// name: 'iphone',
+//       use: { ...devices['iPhone 12'] },
 
-       ...devices['iPhone 12'],
-},
+//        ...devices['Galaxy Note II'],
+// },
 
   ],
 

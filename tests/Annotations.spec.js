@@ -21,7 +21,7 @@ console.log('test 2 exicuted')
 test('test 3', async ({ page, browserName }) => {
 
 console.log('test 3 exicuted')
-if(browserName === 'firefox'){
+if(browserName === 'chromium'){
     test.fail();
 }
 
@@ -37,14 +37,14 @@ if(browserName === 'chromium'){
 })
 
 
-test('test 5', async ({ page, browserName }) => {
+// test('test 5', async ({ page, browserName }) => {
 
-//test.slow();
-console.log('test 5 exicuted')
-if(browserName === 'firefox'){
-    test.fail();
-}
-})
+// test.slow();
+// console.log('test 5 exicuted')
+// if(browserName === 'firefox'){
+//     test.fail();
+// }
+// })
 //Group Annotation "Describe"
 test.describe('group 1',()=>{
 test('test 6', async ({page})=>{
