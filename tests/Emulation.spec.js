@@ -16,7 +16,7 @@ test.use ({
 
 test ('test 1', async ({ page }) => {
 
-    await page.goto('file:///C:/Users/Shree/OneDrive/Desktop/FixFast/index.html#mobile-section');
+    await page.goto('PlaywrightCustomUserAgent/1.0');
 console.log('test 1 exicuted')
 
 });
