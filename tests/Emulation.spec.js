@@ -16,7 +16,7 @@ test.use ({
 
 test ('test 1', async ({ page }) => {
 
-    await page.goto('PlaywrightCustomUserAgent/1.0');
+    await page.goto('http://127.0.0.1:5500/ERP-System/gtvl-sales-analytics-dashboard/store_performance_list.html');
 console.log('test 1 exicuted')
 
 });
